@@ -1,0 +1,54 @@
+/* style.css */
+.unsubscribe-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .unsubscribe-button:disabled {
+    background-color: #d3d3d3;
+    cursor: default;
+  }
+  
+  /* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #email-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #email-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #email-list button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #email-list button:hover {
+    background-color: #ff4500;
+  }
+  
