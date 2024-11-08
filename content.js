@@ -2,7 +2,7 @@
 
 function findUnsubscribeLinks () {
   //DEBUGGING
-  console.log('Gmail has been detected -- running content.js')
+  console.log('findUnsubscribeLinks() pushed to stack')
 
   // Find all links on the page
   var links = window.document.querySelectorAll('a')
@@ -27,6 +27,8 @@ function findUnsubscribeLinks () {
    WE EVEN NEED A CONTENT.JS OR CAN ALL BE HANDLED IN BACKGROUND SCRIPT? */
 
    // Run findUnsubscribeLinks() after the entire DOM is loaded
-chrome.webNavigation.onDOMContentLoaded.addListener((x) => {
-findUnsubscribeLinks();
+
+console.log('Gmail has been detected -- running content.js')
+chrome.webNavigation.onDOMContentLoaded.addListener(x => {
+  findUnsubscribeLinks();
 });
